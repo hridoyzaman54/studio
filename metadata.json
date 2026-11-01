@@ -1,0 +1,6 @@
+{
+  "name": "AZVerse — Top 10s & Deep Reviews",
+  "description": "The definitive cinema-grade consensus engine for curated Top 10 countdowns, deep cinephile reviews, anime epics, gaming benchmarks, and live community debates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

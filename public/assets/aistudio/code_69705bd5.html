@@ -1,0 +1,1213 @@
+<!DOCTYPE html><html class="light" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+@keyframes kenburnsSlow {
+  0% { transform: scale(1) translate(0, 0); }
+  50% { transform: scale(1.05) translate(-0.8%, -0.8%); }
+  100% { transform: scale(1.02) translate(0.8%, 0.4%); }
+}
+.kenburns-active {
+  animation: kenburnsSlow 18s ease-in-out infinite alternate;
+}
+.hero-glass-surface {
+  background: rgba(255, 255, 255, 0.76);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08);
+}
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#dae2fd","on-tertiary-fixed":"#0d1c2f","primary-container":"#d97706","surface-glass":"rgba(255, 255, 255, 0.85)","surface-bright":"#ffffff","tertiary":"#475569","on-secondary-fixed":"#331200","on-error-container":"#93000a","primary-fixed":"#fef3c7","primary":"#b45309","secondary-container":"#f59e0b","secondary-fixed":"#ffedd5","surface":"#f8fafc","tertiary-fixed":"#e2e8f0","on-background":"#0f172a","on-secondary-fixed-variant":"#78350f","gold-bright":"#f59e0b","outline-variant":"#e2e8f0","on-secondary":"#ffffff","border-subtle":"#e2e8f0","on-primary-fixed":"#451a03","secondary-fixed-dim":"#fed7aa","on-surface":"#0f172a","surface-container-low":"#ffffff","on-tertiary-container":"#ffffff","outline":"#94a3b8","on-error":"#ffffff","tertiary-container":"#334155","background":"#f8fafc","surface-quartz":"#f1f5f9","on-tertiary-fixed-variant":"#334155","primary-fixed-dim":"#fde68a","surface-container-high":"#e2e8f0","on-secondary-container":"#451a03","gold-light":"#fef3c7","surface-container-lowest":"#ffffff","on-primary-container":"#ffffff","surface-alabaster":"#ffffff","secondary":"#b45309","tertiary-fixed-dim":"#cbd5e1","text-secondary":"#334155","on-tertiary":"#ffffff","border-strong":"#cbd5e1","text-muted":"#64748b","surface-container":"#f1f5f9","on-primary-fixed-variant":"#78350f","surface-tint":"#d97706","surface-muted":"#f8fafc","surface-dim":"#e2e8f0","on-primary":"#ffffff","gold-halo":"rgba(217, 119, 6, 0.16)","text-primary":"#0f172a","error":"#dc2626","error-container":"#fee2e2","inverse-surface":"#0f172a","inverse-primary":"#fde68a","surface-container-highest":"#cbd5e1","inverse-on-surface":"#f8fafc","on-surface-variant":"#475569"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1rem","gutter-sm":"0.75rem",gutter:"1.5rem","margin-mobile":"1rem","margin-desktop":"3rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter-lg":"2rem","space-lg":"1.5rem",margin:"1.5rem","space-xl":"2.5rem"},fontFamily:{"headline-lg":["Space Grotesk"],"headline-xl":["Space Grotesk"],"headline-md":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"headline-sm":["Space Grotesk"],"headline-xl-mobile":["Space Grotesk"],"label-md":["Geist"],"body-lg":["Geist"],"rank-display":["Space Grotesk"],"label-lg":["Geist"],"body-md":["Geist"],"body-sm":["Geist"],"label-sm":["Geist"]},fontSize:{"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.025em",fontWeight:"700"}],"headline-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"700"}],"headline-md":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["22px",{lineHeight:"30px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"500"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"400"}],"rank-display":["48px",{lineHeight:"48px",letterSpacing:"-0.04em",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"18px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"600"}]}}}};</script></head><body class="bg-[#f8fafc] font-body-md text-body-md text-on-surface antialiased selection:bg-amber-100 selection:text-amber-900"><header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm"><div class="h-20 w-full px-margin-mobile md:px-margin lg:px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="discover" href="#"><img alt="AZVerse Glowing Emblem Logo" class="h-8 w-auto object-contain drop-shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSTNzNp24dpPEIcilGQJtghnNt2K_haOZAAAVM_wRkARJlVzNLakC9oTFgsotjWEgGcb_fRZNg955Zq6ae6U0sgAWcrdugz9H-OkUo8v2Bk3YZ7HhnDikrkAQJDze9qXFGukGB3fYf-N4C0BPeojLhRhtccGhftE5RavLnF4IulQkdHTV_9jhqkmm8l30HMZjHojGJ-oakQYSm3oaOzP_Ybz18wUO2KsM81Y7iOA"><span class="font-headline-sm text-headline-sm tracking-tight text-slate-900 uppercase">AZ<span class="ml-1 px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-700 font-label-sm text-label-sm font-bold tracking-widest border border-amber-500/20">VERSE</span></span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-amber-500/10 text-amber-800 font-semibold"><a aria-current="page" class="px-space-md py-space-sm rounded-lg transition-colors bg-amber-500/10 text-amber-700 font-semibold" data-path="discover" href="#">Discover</a><div class="relative group"><button class="flex items-center gap-1 px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors"><span class="">Categories</span><span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180 text-slate-400">expand_more</span></button><div class="absolute left-0 top-full pt-space-xs hidden group-hover:block w-48"><div class="bg-white rounded-xl p-space-xs shadow-xl border border-slate-200"><a class="flex items-center px-space-md py-space-sm rounded-lg font-label-md text-label-md text-slate-700 hover:text-amber-800 hover:bg-amber-50/70 transition-colors" data-path="category-movies" href="#">Movies</a><a class="flex items-center px-space-md py-space-sm rounded-lg font-label-md text-label-md text-slate-700 hover:text-amber-800 hover:bg-amber-50/70 transition-colors" data-path="category-anime" href="#">Anime</a><a class="flex items-center px-space-md py-space-sm rounded-lg font-label-md text-label-md text-slate-700 hover:text-amber-800 hover:bg-amber-50/70 transition-colors" data-path="category-tech" href="#">Tech</a><a class="flex items-center px-space-md py-space-sm rounded-lg font-label-md text-label-md text-slate-700 hover:text-amber-800 hover:bg-amber-50/70 transition-colors" data-path="category-gaming" href="#">Gaming</a></div></div></div><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors" data-path="trending" href="#">Trending</a><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors" data-path="community-arena" href="#">Community Arena</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-sm bg-slate-100/90 hover:bg-slate-100 border border-slate-200/80 px-space-md py-2 rounded-full transition-colors"><span class="material-symbols-outlined text-slate-400 text-[18px]">search</span><input class="bg-transparent w-44 lg:w-64 font-body-sm text-body-sm text-slate-800 placeholder:text-slate-400 focus:outline-none" placeholder="Search rankings, critics, tags..." type="text"><kbd class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-white text-slate-500 border border-slate-200 shadow-xs">⌘K</kbd></div><a class="hidden sm:inline-flex items-center gap-space-xs bg-amber-500 hover:bg-amber-600 text-white px- space-md px-4 py-2.5 rounded-full font-label-lg text-label-lg font-bold transition-all shadow-sm shadow-amber-500/30 hover:shadow-md" data-path="submit-list" href="#">Submit a List</a><div class="flex items-center gap-space-xs"><button aria-label="Toggle dark mode" class="w-9 h-9 rounded-full flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors border border-transparent hover:border-slate-200" title="Switch to Dark Mode"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><button aria-label="Notifications" class="relative w-9 h-9 rounded-full flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors border border-transparent hover:border-slate-200"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-amber-500 ring-2 ring-white"></span></button></div><a class="relative p-0.5 rounded-full ring-2 ring-slate-200 hover:ring-amber-500 transition-all group" data-path="user-critic-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWQbHu0vjGHPlRCBKdwxMBdRkQ8kMhPGKU41sVvjom-r7XJk27EIeDkVM3Jz6lhc-X-mGwSitsgkRJI9nCoSxz6TviyFvMVNMROQ4-kZYDsEVNc5Br0dAleo5pu6U-l-IHsR75OFWYgC_bncYIbmQ0NlXGLK6ZvYLvxbv4NSGUvkI75G1N6xoA9OpD4vsBAGJPU2lzhd-SCbxDH3RZj1Bc5mEtvF8ISVBdxhDrKQ"></a></div></div></header><main class="w-full pt-20 bg-[#f8fafc] min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Luminous Quartz Cinema Dynamic Hero Canvas -->
+<div class="relative w-full overflow-hidden">
+<!-- 1. HERO SECTION WITH VIVID, CRISP CINEMATIC REEL -->
+<section class="relative w-full px-margin-mobile md:px-margin lg:px-margin-desktop pt-8 pb-12 overflow-hidden" id="hero-carousel-section">
+<!-- DYNAMIC CINEMATIC BACKDROP SLIDESHOW - Vivid Clarity -->
+<div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+<!-- Slide 1: Interstellar Event Horizon / Deep Cosmic Space -->
+<div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-canon="Cinema Canon #01" data-index="0" data-label="INTERSTELLAR (4K IMAX)">
+<img alt="Deep space cosmic nebula and luminous gravitational accretion disk" class="w-full h-full object-cover kenburns-active brightness-[0.98] contrast-[1.05]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9w8xrwCCppORFnAdHHRymMshEbONl3iUikwEdr-MBfhkz70D75nzQL4xzBY6DyQkQMPU12JgvO2mO7VIrc9L2ldi7gub1xSXN348Oz7TLFGlHEJSw5O1huGLr4b_fsxoowcmUdQoyQ20ebshMYrKuZSBpI2c5T-mH2q6zKE20hDV5c0GnrSUuC4H0khKmWhCQgeuBiZzAZiRngv-Slh-rP9gXoUIELEXOTFlTzg">
+</div>
+<!-- Slide 2: Cyberpunk Neon Rain Metropolis (Blade Runner aesthetic) -->
+<div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-canon="Cyberpunk Canon #02" data-index="1" data-label="BLADE RUNNER 2049 (4K HDR)">
+<img alt="Neon reflections on rain-slicked futuristic cyberpunk city street" class="w-full h-full object-cover kenburns-active brightness-[0.98] contrast-[1.05]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmnB8y59Ui5D7TtVjarHpSGMlidKUqdXRR9kaZ_n8iugJ3yT-YKVSeFFCAMvo7oHYe8zhsJYtetjeDKDEtY2HGgy6OgvDK9fNl1olm31OC6W9odELWeAmewoymU_-YV2rDhJ221vOn9sZrju7O68nbZwXMoDA5eKbVgCpDbPm8demX1D5Q6SkrQt1UnXUok3EhYGW5qBsAmp5CTelVt50thnLxVnEovmGjHMoSVw">
+</div>
+<!-- Slide 3: Dystopian Sci-Fi Desert Vista (Dune Arrakis aesthetic) -->
+<div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100" data-canon="Epic Sci-Fi #03" data-index="2" data-label="DUNE: EXPEDITIONS (70MM)">
+<img alt="Cinematic moody desert dunes bathed in warm amber twilight" class="w-full h-full object-cover kenburns-active brightness-[0.98] contrast-[1.05]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXsvnzo2MZkQfN1mSTjHRE-ZvdC0WjnZQqvKjNsZVVh43ghhnkufLHq7nvj6cBsvYO14zvTI6a5WNT0wab3zSo9c6VdtEeUvZa0nsXP-hXf8lMNIYxudO9dOygmdK8ceaKzkq2wwlRAHE8_nygXqEXRjz5J8k-fJvyrjx7a2dGu85d1zDPRnUnDj6QVEh7fOKaiUsZUD1TV3cQclWZ64fmCFzmMOzvdgQHBJog8Q">
+</div>
+<!-- Slide 4: Deep Void Monolith & Cyber Stars (2001 & Cyberpunk Anime) -->
+<div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-canon="Pantheon Benchmark #04" data-index="3" data-label="2001: SPACE ODYSSEY (CANON)">
+<img alt="Atmospheric starlight nebula void with dramatic dark horizon" class="w-full h-full object-cover kenburns-active brightness-[0.98] contrast-[1.05]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZhuG_7YuewOqb--eWeAiTQ5EUS5dYXOec-YMpZk54HX1gv5nxOtOtT6afnmD5rDHu2akT-25FIt2uq1FCCNfF6uIW8GdEZaTI-GrXTD8MEGT-nKvm-nCwEH_L4t9Zw36SRnUzBJLS0wZzeLCV-pdtRby53MtZO1vrIjY_nPraqfZkWMSdcw75dUj9ETdiFedMSYN7gUmYyYnfGy3BYM9LL01dVN0xMsbdh_QJVQ">
+</div>
+<!-- SOPHISTICATED LIGHT-MODE THEATER GRADIENT SCRIM (Preserves visual punch while ensuring razor-sharp typography) -->
+<div class="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-[#f8fafc]"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-[#f8fafc]/90 via-transparent to-[#f8fafc]/90"></div>
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] h-[300px] bg-amber-400/15 blur-[120px] rounded-full pointer-events-none"></div>
+</div>
+<!-- LIVE REEL STATUS BADGE & THUMBNAIL SWITCHER (TOP BAR IN HERO) -->
+<div class="relative z-10 max-w-7xl mx-auto flex items-center justify-between pb-3 pointer-events-auto">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-slate-200/90 text-slate-700 font-label-sm text-label-sm shadow-xs">
+<span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+<span class="font-bold text-amber-700" id="reel-indicator-text">LIVE REEL: 03 / 04 — DUNE: EXPEDITIONS (70MM)</span>
+</div>
+<!-- Quick Reel Selector Dots -->
+<div class="flex items-center gap-2 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-slate-200/90 shadow-xs">
+<button aria-label="Reel 1: Interstellar" class="reel-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all" data-reel="0"></button>
+<button aria-label="Reel 2: Blade Runner 2049" class="reel-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all" data-reel="1"></button>
+<button aria-label="Reel 3: Dune" class="reel-dot w-6 h-1.5 rounded-full bg-amber-500 shadow-sm transition-all" data-reel="2"></button>
+<button aria-label="Reel 4: 2001 Space Odyssey" class="reel-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all" data-reel="3"></button>
+</div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto flex flex-col items-center text-center mt-2">
+<!-- Frosted Floating Theater Card Wrapper for Hero Text -->
+<div class="w-full max-w-4xl px-4 py-4 flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-white/70 backdrop-blur-md border border-amber-200/60 shadow-xs mb-5">
+<span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse shadow-sm shadow-amber-500/50"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-amber-800 font-bold">AZVerse Consensus Engine</span>
+<span class="text-slate-300 text-xs font-semibold">/</span>
+<span class="font-label-sm text-label-sm text-slate-700 font-medium">Live Ranked Matrix v4.2</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl max-w-3xl tracking-tight text-slate-950 font-bold drop-shadow-sm leading-tight">
+      The Ultimate Universe of <br class="hidden sm:inline">
+<span class="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-700 bg-clip-text text-transparent drop-shadow-xs">
+        Top 10s &amp; Deep Reviews
+      </span>
+</h1>
+<p class="mt-4 font-body-lg text-body-lg text-slate-800 max-w-2xl leading-relaxed font-medium drop-shadow-xs">
+      Curated cinephile breakdowns, anime epics, cutting-edge silicon, and gaming milestones—debated, ranked, and decided by millions in theater-grade consensus.
+    </p>
+<div class="mt-7 flex flex-wrap items-center justify-center gap-2 max-w-3xl">
+<button class="px-4 py-2 rounded-full bg-amber-500 text-white font-label-lg text-label-lg font-bold shadow-sm shadow-amber-500/30 transition-all hover:bg-amber-600">
+        All Universes
+      </button>
+<button class="px-4 py-2 rounded-full bg-white/60 hover:bg-white/90 text-slate-800 font-label-lg text-label-lg border border-white/60 backdrop-blur-md shadow-xs transition-colors font-medium">
+        Sci-Fi &amp; Cinema
+      </button>
+<button class="px-4 py-2 rounded-full bg-white/60 hover:bg-white/90 text-slate-800 font-label-lg text-label-lg border border-white/60 backdrop-blur-md shadow-xs transition-colors font-medium">
+        Dark Thrillers
+      </button>
+<button class="px-4 py-2 rounded-full bg-white/60 hover:bg-white/90 text-slate-800 font-label-lg text-label-lg border border-white/60 backdrop-blur-md shadow-xs transition-colors font-medium">
+        Shonen &amp; Cyberpunk Anime
+      </button>
+<button class="px-4 py-2 rounded-full bg-white/60 hover:bg-white/90 text-slate-800 font-label-lg text-label-lg border border-white/60 backdrop-blur-md shadow-xs transition-colors font-medium">
+        Next-Gen Gaming
+      </button>
+<button class="px-4 py-2 rounded-full bg-white/60 hover:bg-white/90 text-slate-800 font-label-lg text-label-lg border border-white/60 backdrop-blur-md shadow-xs transition-colors font-medium">
+        Silicon Frontiers
+      </button>
+</div>
+</div>
+<!-- Metric Pulse Ticker Bar -->
+<div class="mt-8 w-full grid grid-cols-2 md:grid-cols-4 gap-3 bg-white/95 backdrop-blur-md border border-slate-200/90 p-3 rounded-2xl shadow-sm shadow-slate-200/60">
+<div class="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-slate-50/80 border border-slate-100">
+<span class="material-symbols-outlined text-amber-600 text-[22px]">format_list_numbered</span>
+<div class="text-left">
+<span class="block font-headline-sm text-sm text-slate-900 font-bold tracking-tight">14,820</span>
+<span class="block font-label-sm text-label-sm text-slate-500">Active Countdowns</span>
+</div>
+</div>
+<div class="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-slate-50/80 border border-slate-100">
+<span class="material-symbols-outlined text-amber-600 text-[22px]">how_to_vote</span>
+<div class="text-left">
+<span class="block font-headline-sm text-sm text-slate-900 font-bold tracking-tight">1.4M</span>
+<span class="block font-label-sm text-label-sm text-slate-500">Community Votes This Week</span>
+</div>
+</div>
+<div class="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-slate-50/80 border border-slate-100">
+<span class="material-symbols-outlined text-amber-600 text-[22px]">verified_user</span>
+<div class="text-left">
+<span class="block font-headline-sm text-sm text-slate-900 font-bold tracking-tight">892</span>
+<span class="block font-label-sm text-label-sm text-slate-500">Verified Guild Critics</span>
+</div>
+</div>
+<div class="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-amber-50/80 border border-amber-100">
+<span class="material-symbols-outlined text-amber-600 text-[22px] animate-bounce">local_fire_department</span>
+<div class="text-left truncate">
+<span class="block font-headline-sm text-sm text-amber-800 font-bold truncate">Top 10 Sci-Fi Decade</span>
+<span class="block font-label-sm text-label-sm text-amber-600 truncate">Trending Live Now</span>
+</div>
+</div>
+</div>
+<!-- CAROUSEL AMBER SYNC PROGRESS TRACK BAR -->
+<div class="w-full mt-4 flex items-center justify-between gap-3 px-1">
+<div class="flex-1 h-1.5 bg-slate-200/90 rounded-full overflow-hidden">
+<div class="reel-progress-bar h-full bg-amber-500 transition-all duration-300" id="progress-bar-0" style="width: 100%;"></div>
+</div>
+<div class="flex-1 h-1.5 bg-slate-200/90 rounded-full overflow-hidden">
+<div class="reel-progress-bar h-full bg-amber-500 transition-all duration-300" id="progress-bar-1" style="width: 100%;"></div>
+</div>
+<div class="flex-1 h-1.5 bg-slate-200/90 rounded-full overflow-hidden">
+<div class="reel-progress-bar h-full bg-amber-500 transition-all duration-300" id="progress-bar-2" style="width: 0%;"></div>
+</div>
+<div class="flex-1 h-1.5 bg-slate-200/90 rounded-full overflow-hidden">
+<div class="reel-progress-bar h-full bg-amber-500 transition-all duration-300" id="progress-bar-3" style="width: 0%;"></div>
+</div>
+</div><div class="w-full border-y border-slate-200/80 bg-white/80 backdrop-blur-md flex items-center overflow-hidden py-3 px-4 my-6 rounded-xl shadow-xs relative z-10"><div class="flex items-center gap-2 font-bold text-xs uppercase tracking-wider text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full shrink-0 mr-4 z-10 shadow-sm"><span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span><span class="">LIVE PULSE</span></div><div class="overflow-hidden relative flex-1"><div class="inline-flex items-center gap-6 whitespace-nowrap text-xs font-medium text-slate-700 font-body-sm animate-marquee" style="display: inline-flex; animation: azMarquee 35s linear infinite;"><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">🏆</span> Dune: Part Two captures 64% in Arena Battle</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">⭐</span> Interstellar locks #1 Sci-Fi Apex (9.8 Score)</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">🎮</span> Elden Ring dominates Top 10 Souls Encounters (160k votes)</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">🎬</span> Denis Villeneuve: Geometry of Dread (22 min read)</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">🩸</span> Top 10 Survival Horror Games ranks #2 today</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">✨</span> Studio Ghibli Golden Era achieves 9.8 consensus</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">🔥</span> 42,100 new ballots verified in the last hour</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">🏆</span> Dune: Part Two captures 64% in Arena Battle</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">⭐</span> Interstellar locks #1 Sci-Fi Apex (9.8 Score)</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">🎮</span> Elden Ring dominates Top 10 Souls Encounters (160k votes)</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">🎬</span> Denis Villeneuve: Geometry of Dread (22 min read)</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">🩸</span> Top 10 Survival Horror Games ranks #2 today</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">✨</span> Studio Ghibli Golden Era achieves 9.8 consensus</span><span class="text-amber-400 font-bold">✦</span><span class="inline-flex items-center gap-2"><span class="text-amber-500 font-bold">🔥</span> 42,100 new ballots verified in the last hour</span></div></div></div>
+</div>
+</section>
+<!-- MAIN TWO-COLUMN DISCOVERY WORKSPACE -->
+<div class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop pb-24">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg">
+<!-- LEFT MAIN CONTENT: FLAGSHIP LISTICLE (8 COLS) -->
+<main class="lg:col-span-8 flex flex-col gap-6">
+<!-- 2. FLAGSHIP LISTICLE SHOWCASE HEADER -->
+<div class="p-6 md:p-8 rounded-2xl bg-white border border-slate-200/90 shadow-sm relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-amber-400/10 blur-[90px] rounded-full pointer-events-none"></div>
+<div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200/60 text-amber-800 font-label-sm text-label-sm font-semibold tracking-wider uppercase">
+<span class="material-symbols-outlined text-base text-amber-600">stars</span> AZVerse Canon Featured
+              </div>
+<div class="flex items-center gap-4 font-body-sm text-body-sm text-slate-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-base text-slate-400">visibility</span> 248.5k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-base text-slate-400">thumb_up</span> 42.1k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-base text-slate-400">schedule</span> 18 min</span>
+</div>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-slate-900 tracking-tight mb-4 font-bold">
+              Top 10 Mind-Bending Sci-Fi Masterpieces That Redefined Cinema
+            </h2>
+<div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200" data-alt="Portrait photo of Chief Critic Elena Vance in a cinematic dark grading studio wearing dark glasses and tailored minimalist jacket with subtle warm amber rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnArpLctY1ddO6DMdn3hm44D8q32xwAj63nOoFaPhyHkmNJHhNv-vfSY4Ni-8c7UGJxEqj7wS6AETPNaDLuORrmaurN--Da0YLkujZeCezFrlHFzLQJUaLhcWdmZDWDnvJsvcls_HUSJaHN192Y-XKukFAmiVYWJ12MRWPWycFO_u0KTjuoPlHT5zQNJhSQEx7UoDhSpTiDYOpToa0z6DTyzFJRxe4w502ASwo8Q">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-slate-900 font-bold">Elena Vance</span>
+<span class="material-symbols-outlined text-amber-600 text-sm">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-slate-500">Chief Cinema Lead • Published 3h ago</span>
+</div>
+</div>
+<!-- Action buttons -->
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-label-md font-label-md flex items-center gap-1.5 transition-colors border border-slate-200/60 font-semibold">
+<span class="material-symbols-outlined text-base text-slate-500">bookmark_add</span> Save
+                </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-label-md font-label-md flex items-center gap-1.5 transition-colors border border-slate-200/60 font-semibold">
+<span class="material-symbols-outlined text-base text-slate-500">share</span> Share
+                </button>
+</div>
+</div>
+<!-- DUAL SORT SWITCHER & FILTERS BAR -->
+<div class="mt-8 pt-5 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 bg-slate-50 p-3 rounded-xl border border-slate-200/80">
+<!-- Switcher Tabs -->
+<div class="flex items-center bg-white p-1 rounded-lg border border-slate-200/80 shadow-xs">
+<button class="px-4 py-2 rounded-md font-label-md text-label-md font-bold bg-amber-500 text-white shadow-xs transition-all flex items-center gap-1.5" id="tab-editorial">
+<span class="material-symbols-outlined text-base">military_tech</span>
+                  Editorial Countdown (#10 → #1)
+                </button>
+<button class="px-4 py-2 rounded-md font-label-md text-label-md text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-1.5" id="tab-community">
+<span class="material-symbols-outlined text-base text-slate-400">trending_up</span>
+                  Visitor Live Ranking
+                </button>
+</div>
+<!-- Quick Sub-filters -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0">
+<button class="px-3 py-1.5 rounded-lg bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-label-sm text-label-sm font-semibold shrink-0">
+                  All 10 Entries
+                </button>
+<button class="px-3 py-1.5 rounded-lg bg-white hover:bg-slate-100 text-slate-600 hover:text-slate-900 border border-slate-200 font-label-sm text-label-sm shrink-0 flex items-center gap-1">
+<span class="">IMAX / 4K</span>
+<span class="material-symbols-outlined text-xs text-slate-400">tune</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-white hover:bg-slate-100 text-slate-600 hover:text-slate-900 border border-slate-200 font-label-sm text-label-sm shrink-0 flex items-center gap-1">
+<span class="">Score 9.0+</span>
+<span class="material-symbols-outlined text-xs text-slate-400">arrow_drop_down</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 3. COUNTDOWN CARDS -->
+<!-- ITEM #01 CARD (GOLD MASTER CHAMPION) -->
+<article class="p-6 md:p-8 rounded-2xl bg-white border-2 border-amber-400/40 shadow-sm relative overflow-hidden transition-all duration-300 hover:shadow-md hover:border-amber-500/70">
+<div class="absolute -top-32 -left-32 w-80 h-80 bg-amber-400/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="flex flex-col gap-6">
+<!-- Top Row: Apex Badge + Rank Display + Critic Score -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="font-rank-display text-rank-display font-bold text-amber-600 drop-shadow-xs">
+                    #01
+                  </div>
+<div>
+<span class="inline-flex items-center gap-1 px-3 py-0.5 rounded-full bg-amber-500 text-white font-label-sm text-label-sm font-bold uppercase tracking-wider shadow-xs">
+<span class="material-symbols-outlined text-xs">workspace_premium</span> Consensus Apex
+                    </span>
+<span class="block font-body-sm text-body-sm text-slate-500 mt-0.5 font-medium">Unanimous #1 across 42 critics</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-amber-700 font-bold block">9.8</span>
+<span class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-semibold">Verdict</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200/80 flex items-center justify-center text-amber-600 shadow-xs">
+<span class="material-symbols-outlined text-2xl">trophy</span>
+</div>
+</div>
+</div>
+<!-- Media Showcase Container -->
+<div class="relative w-full aspect-video md:aspect-[21/9] rounded-xl overflow-hidden shadow-sm border border-slate-200 group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Expansive cinematic space scene from Interstellar style movie showing a colossal luminous glowing black hole accretion disk with radiant warm amber photon rings, deep cosmic void, and miniature endurance spaceship silhouette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYa1G-JGjoVMd0Kr3udlmPzR2W_GTQ5euQpkqLUJfTZOr50pgsctZlUJZAcwhKOV7kAPzdr8VWriF2vbti1tgFqFwSb2AmbrWfzsBA6SZNUJOHg4w47uwxWROVzTuahKm9nWEhLuLCl9SYPCX7jy3yqtZPG94DvkAgmtTNtuhJiLTngX82WiSPvOc7qupDKe0BHXirjKiVbDQfGNKR-wXRqOzy3qrowT6Wbcn91A">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<!-- Floating Play Trailer / Audio Preview -->
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="flex items-center gap-2 px-5 py-3 rounded-full bg-white/95 text-slate-900 hover:bg-amber-500 hover:text-white transition-all shadow-lg backdrop-blur-md transform group-hover:scale-105 font-bold">
+<span class="material-symbols-outlined text-xl">play_arrow</span>
+<span class="font-label-lg text-label-lg">Watch Official 4K Trailer • 2:45</span>
+</button>
+</div>
+<!-- Floating Video Overlays (Bottom left & right) -->
+<div class="absolute bottom-3 left-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-md text-amber-700 font-label-sm text-label-sm font-semibold shadow-xs">4K HDR</span>
+<span class="px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-md text-slate-800 font-label-sm text-label-sm font-semibold shadow-xs">IMAX Enhanced</span>
+<span class="px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-md text-slate-800 font-label-sm text-label-sm font-semibold shadow-xs">Dolby Atmos</span>
+</div>
+<div class="absolute bottom-3 right-3 flex items-center gap-1.5 px-3 py-1 rounded-md bg-white/90 backdrop-blur-md text-slate-700 font-label-sm text-label-sm font-medium shadow-xs">
+<span class="material-symbols-outlined text-sm text-amber-600">graphic_eq</span>
+<span class="">Zimmer Organ Peak</span>
+</div>
+</div>
+<!-- Title & Editorial Breakdown -->
+<div>
+<h3 class="font-headline-md text-headline-md text-slate-900 tracking-tight font-bold">
+                  Interstellar (2014) — <span class="text-slate-500 font-normal">Dir. Christopher Nolan</span>
+</h3>
+<!-- Accolade Chips -->
+<div class="mt-3 flex flex-wrap items-center gap-2">
+<span class="px-3 py-1 rounded-md bg-amber-50 border border-amber-200/60 text-amber-800 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-amber-600">star</span> Academy Award: Visual Effects
+                  </span>
+<span class="px-3 py-1 rounded-md bg-slate-100 border border-slate-200 text-slate-700 font-label-sm text-label-sm font-medium">
+                    99% Audience Metacritic
+                  </span>
+<span class="px-3 py-1 rounded-md bg-slate-100 border border-slate-200 text-slate-700 font-label-sm text-label-sm font-medium">
+                    Kip Thorne Physics Verified
+                  </span>
+</div>
+<!-- Editorial Consensus Quote -->
+<blockquote class="mt-4 p-4 rounded-xl bg-slate-50 border-l-4 border-amber-500 text-slate-700 font-body-md text-body-md italic shadow-xs">
+                  “Flawless acoustic resonance and emotional gravity that bends relativistic physics into cinematic transcendence. Nolan crafts an insurmountable benchmark in modern cosmic cinema.”
+                  <span class="block mt-2 font-label-sm text-label-sm text-amber-800 uppercase font-bold not-italic">— Elena Vance, Chief Lead</span>
+</blockquote>
+</div>
+<!-- Interactive Voting & Engagement Pill Strip -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-4 bg-slate-50 p-3 rounded-xl border border-slate-200/80">
+<!-- Dual Vote Conjoined Unit -->
+<div class="inline-flex items-center rounded-full bg-white p-1 shadow-xs border border-slate-200">
+<button class="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-500 text-white font-label-lg text-label-lg font-bold transition-all shadow-xs">
+<span class="material-symbols-outlined text-base">thumb_up</span>
+<span class="">14,290</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1.5 text-slate-500 hover:text-slate-900 font-label-sm text-label-sm transition-colors">
+<span class="material-symbols-outlined text-base">thumb_down</span>
+<span class="">412</span>
+</button>
+</div>
+<!-- Community Star Rater -->
+<div class="flex items-center gap-2">
+<div class="flex items-center text-amber-500 text-base">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star_half</span>
+</div>
+<span class="font-label-lg text-label-lg text-slate-900 font-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-slate-500">(38,104 ratings)</span>
+</div>
+<!-- Action Tools -->
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-white hover:bg-slate-100 text-slate-700 font-label-md text-label-md flex items-center gap-1 border border-slate-200 transition-colors font-semibold">
+<span class="material-symbols-outlined text-base text-slate-500">comment</span>
+<span class="">2,840</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-white hover:bg-slate-100 text-slate-700 font-label-md text-label-md flex items-center gap-1 border border-slate-200 transition-colors">
+<span class="material-symbols-outlined text-base text-slate-500">playlist_add</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- ITEM #02 CARD (CYBERPUNK NEON MASTERPIECE) -->
+<article class="p-6 md:p-8 rounded-2xl bg-white border border-slate-200/90 shadow-sm relative overflow-hidden transition-all duration-300 hover:shadow-md hover:border-slate-300">
+<div class="flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="font-rank-display text-rank-display font-bold text-slate-500">
+                    #02
+                  </div>
+<div>
+<span class="inline-flex items-center gap-1 px-3 py-0.5 rounded-full bg-slate-100 text-slate-800 font-label-sm text-label-sm font-semibold uppercase tracking-wider border border-slate-200">
+                      Masterpiece Runner-Up
+                    </span>
+<span class="block font-body-sm text-body-sm text-slate-500 mt-0.5">Top-voted in Visual Composition</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-slate-900 font-bold block">9.6</span>
+<span class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-semibold">Verdict</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-700">
+<span class="material-symbols-outlined text-xl">camera_roll</span>
+</div>
+</div>
+</div>
+<!-- Media Preview 16:9 -->
+<div class="relative w-full aspect-video md:aspect-[21/9] rounded-xl overflow-hidden shadow-sm border border-slate-200 group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Neo-noir cyberpunk cityscape from Blade Runner 2049 aesthetic showing holographic neon pink advert giant ballerina shining through dense heavy rain, smog, and wet pavement reflecting golden amber highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPKubmM3sWpzSw-kBhAY798N8k8bWR137Ixr2zEzLpXwH6PWMhuW5usbl_IytdhV0Mo8YMbIL2mrthEIAi1MrIrKCwW1zmQoY4pGXqMI0aYHaj1IAwfDi07LBB4_NvXAcbWfA22m5XrbBaOz2Cj8Cqopv68ME5r51MlPiuPTqdY-4j_Zl-7gfXhySC3pNwWX6TjohvSkuZYIlpRzAkP0z4hUo-zTPtQjPuoRel2w">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 text-slate-900 hover:bg-slate-900 hover:text-white transition-all shadow-md backdrop-blur-md font-bold">
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+<span class="font-label-md text-label-md">Preview Deakins 4K Framing</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-md text-slate-800 font-label-sm text-label-sm font-semibold shadow-xs">Deakins Oscar Cinematography</span>
+<span class="px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-md text-slate-800 font-label-sm text-label-sm font-semibold shadow-xs">Sound Design Benchmark</span>
+</div>
+</div>
+<!-- Title & Review Text -->
+<div>
+<h3 class="font-headline-md text-headline-md text-slate-900 tracking-tight font-bold">
+                  Blade Runner 2049 (2017) — <span class="text-slate-500 font-normal">Dir. Denis Villeneuve</span>
+</h3>
+<p class="mt-2 font-body-md text-body-md text-slate-600 leading-relaxed">
+                  A hypnotic neon dystopia where every single frame feels calibrated like a museum painting. Villeneuve and Roger Deakins expand Philip K. Dick’s existential questioning into an overwhelming sensory monolith.
+                </p>
+</div>
+<!-- Item 2 Voting Row -->
+<div class="flex items-center justify-between pt-2">
+<div class="inline-flex items-center rounded-full bg-slate-100 p-1 border border-slate-200">
+<button class="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white hover:bg-amber-500 hover:text-white text-slate-800 font-label-md text-label-md transition-all border border-slate-200 font-semibold shadow-xs">
+<span class="material-symbols-outlined text-base">thumb_up</span>
+<span class="">11,840</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1.5 text-slate-500 hover:text-slate-900 font-label-sm text-label-sm transition-colors">
+<span class="material-symbols-outlined text-base">thumb_down</span>
+<span class="">320</span>
+</button>
+</div>
+<div class="flex items-center gap-4 text-slate-500 font-label-md text-label-md font-medium">
+<span class="flex items-center gap-1 text-amber-700 font-semibold"><span class="material-symbols-outlined text-base text-amber-600">forum</span> 1,402 comments in debate</span>
+<button class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 font-semibold">Details</button>
+</div>
+</div>
+</div>
+</article>
+<!-- ITEM #03 CARD -->
+<article class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm relative overflow-hidden">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="font-rank-display text-rank-display font-bold text-slate-400">
+                    #03
+                  </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-slate-900 tracking-tight font-bold">
+                      Arrival (2016) — <span class="text-slate-500 font-normal">Dir. Denis Villeneuve</span>
+</h3>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded bg-amber-50 border border-amber-200/70 text-amber-800 font-label-sm text-label-sm font-semibold">
+                        ▲ Community Voted #2 (+1 in Crowd Mode)
+                      </span>
+<span class="font-body-sm text-body-sm text-slate-500">• Nonlinear Linguistics Masterclass</span>
+</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-amber-700 font-bold">9.5</span>
+<span class="font-label-sm text-label-sm text-slate-400 uppercase block font-semibold">Verdict</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-slate-600 leading-relaxed">
+                Amy Adams delivers career-best subtlety in an intellectually towering film that turns first-contact linguistics into an emotional meditation on deterministic time and maternal love.
+              </p>
+<div class="flex items-center justify-between pt-2">
+<div class="inline-flex items-center rounded-full bg-slate-100 p-1 border border-slate-200">
+<button class="flex items-center gap-1.5 px-3 py-1 rounded-full text-slate-700 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm text-slate-500">thumb_up</span>
+<span class="">9,940 votes</span>
+</button>
+</div>
+<button class="text-amber-700 hover:text-amber-800 font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="">Read Full Analytical Breakdown</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- EXPANDABLE BROWSER FOR #04 - #10 -->
+<div class="flex flex-col gap-3 pt-2">
+<div class="flex items-center justify-between px-2">
+<h4 class="font-headline-sm text-headline-sm text-slate-900 font-bold">The Contenders (#04 – #10)</h4>
+<span class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-semibold">Instant Review Feed</span>
+</div>
+<!-- Item #04 -->
+<div class="p-4 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 transition-colors flex items-center justify-between gap-4 shadow-xs">
+<div class="flex items-center gap-4 min-w-0">
+<span class="font-headline-md text-headline-md text-slate-400 font-bold w-12 text-center">#04</span>
+<img class="w-14 h-14 rounded-lg object-cover shrink-0 shadow-xs border border-slate-200" data-alt="Dark green digital rain falling in black cybernetic reality from The Matrix cyberpunk film style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyWY1pqApvnr59xRdiaVU87HsWa5Zg0SUzbedis_KRKCaQJM6jeO86SkzVnmySRJLWmFiL03LVeqVP65SH64abU0mEF6MqDDuZfJ9sc6BKi1gig9n9RBkdEDzUHfj-yUlwjP2tpWYrePnG5v-5SLxnvvrGLMZT4QQpJNzqRto2WDsvKl232lTT-DqsvJf7PzRLASsG_pnOBZ0sRlgVoVixq-t_vu615nk6pLQh7g">
+<div class="min-w-0">
+<h5 class="font-label-lg text-label-lg text-slate-900 font-bold truncate">The Matrix (1999)</h5>
+<span class="font-body-sm text-body-sm text-slate-500 truncate block">The Wachowskis • Bullet-Time &amp; Philosophical Allegory</span>
+</div>
+</div>
+<div class="flex items-center gap-4 shrink-0">
+<span class="font-label-lg text-label-lg text-amber-700 font-bold">9.4</span>
+<button class="w-8 h-8 rounded-full bg-slate-100 hover:bg-amber-500 hover:text-white text-slate-600 flex items-center justify-center transition-colors border border-slate-200">
+<span class="material-symbols-outlined text-base">thumb_up</span>
+</button>
+</div>
+</div>
+<!-- Item #05 -->
+<div class="p-4 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 transition-colors flex items-center justify-between gap-4 shadow-xs">
+<div class="flex items-center gap-4 min-w-0">
+<span class="font-headline-md text-headline-md text-slate-400 font-bold w-12 text-center">#05</span>
+<img class="w-14 h-14 rounded-lg object-cover shrink-0 shadow-xs border border-slate-200" data-alt="Cityscape folding vertically onto itself in dream world architecture with dramatic amber sunlight highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG7w4aXu_1iNhn3gCyHUWckgKwjb87hak9_GFD9wkB1TAw3oSa90gQ7IFmJmjvPL1TE95T4LhSNs-diDK1Ay7BswsQ93RvaZxd1UuaOyVoy6dGZyu4NwneDRGiIsjeixzJnfoOzZrGsDnAdv01dFeINWeX7Ls4w4w6wY7zHtifRCdHJS3zZTUp396CagvxXK1wX4gwAPyYhZb5Yb5iNZEn2Bx4RrQOO-hZ78zeuQ">
+<div class="min-w-0">
+<h5 class="font-label-lg text-label-lg text-slate-900 font-bold truncate">Inception (2010)</h5>
+<span class="font-body-sm text-body-sm text-slate-500 truncate block">Christopher Nolan • Subconscious Architecture</span>
+</div>
+</div>
+<div class="flex items-center gap-4 shrink-0">
+<span class="font-label-lg text-label-lg text-amber-700 font-bold">9.3</span>
+<button class="w-8 h-8 rounded-full bg-slate-100 hover:bg-amber-500 hover:text-white text-slate-600 flex items-center justify-center transition-colors border border-slate-200">
+<span class="material-symbols-outlined text-base">thumb_up</span>
+</button>
+</div>
+</div>
+<!-- Item #06 -->
+<div class="p-4 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 transition-colors flex items-center justify-between gap-4 shadow-xs">
+<div class="flex items-center gap-4 min-w-0">
+<span class="font-headline-md text-headline-md text-slate-400 font-bold w-12 text-center">#06</span>
+<img class="w-14 h-14 rounded-lg object-cover shrink-0 shadow-xs border border-slate-200" data-alt="Gritty dystopian overcast city street with soldiers and refugees in hand-held cinema single take camera aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASsxnqku2XZ-Ye_5JuaAin4IJ7-QJnlmfCTeNZQp95UOQY2rxWvYSJPC3DWzrPbwLLVcWMGqZr3QEwiuMkzI_shdYwWK-LsGxePoxtr_XLPXoMUPZOAc-BX3MTAgp07hQd_yFm8uvM_enx6DLMpsClbD-jQE8doyKbS3cJEXlrEw8ZZ2CpjxJ6UOR1-71RR5u0umdBTWVXIUIw0892m_QR6OKW7x0AMUS9nzYHTw">
+<div class="min-w-0">
+<h5 class="font-label-lg text-label-lg text-slate-900 font-bold truncate">Children of Men (2006)</h5>
+<span class="font-body-sm text-body-sm text-slate-500 truncate block">Alfonso Cuarón • Virtuosic Single-Take Realism</span>
+</div>
+</div>
+<div class="flex items-center gap-4 shrink-0">
+<span class="font-label-lg text-label-lg text-amber-700 font-bold">9.3</span>
+<button class="w-8 h-8 rounded-full bg-slate-100 hover:bg-amber-500 hover:text-white text-slate-600 flex items-center justify-center transition-colors border border-slate-200">
+<span class="material-symbols-outlined text-base">thumb_up</span>
+</button>
+</div>
+</div>
+<!-- Item #07 -->
+<div class="p-4 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 transition-colors flex items-center justify-between gap-4 shadow-xs">
+<div class="flex items-center gap-4 min-w-0">
+<span class="font-headline-md text-headline-md text-slate-400 font-bold w-12 text-center">#07</span>
+<img class="w-14 h-14 rounded-lg object-cover shrink-0 shadow-xs border border-slate-200" data-alt="Mysterious black monolithic slab standing upright under alien sky with planetary alignment and glowing amber stars." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNute4qCtal4r74q5k_Em7bxcI2XFDCmrkEyGdquyRBKiZbojnZObVdo7sxQsw0xsfOo2fdad9gT9F4xgucM_7Rn4jm_DBOG3UEPt0HSQnoHU_Y7t7XlI_iB8xfk5iAE3E1Dkav-MfJMfsg4Fcs4mv2mv-MPnYCxPL5g8vfSXgZ_jZvQ1-HK5kUt3Q_Hfmqwl6-Mx8Qq58OGz2shcPuuUiCq3YUDFFGTSxhv5fag">
+<div class="min-w-0">
+<h5 class="font-label-lg text-label-lg text-slate-900 font-bold truncate">2001: A Space Odyssey (1968)</h5>
+<span class="font-body-sm text-body-sm text-slate-500 truncate block">Stanley Kubrick • The Archetype of Hard Cosmic Fiction</span>
+</div>
+</div>
+<div class="flex items-center gap-4 shrink-0">
+<span class="font-label-lg text-label-lg text-amber-700 font-bold">9.2</span>
+<button class="w-8 h-8 rounded-full bg-slate-100 hover:bg-amber-500 hover:text-white text-slate-600 flex items-center justify-center transition-colors border border-slate-200">
+<span class="material-symbols-outlined text-base">thumb_up</span>
+</button>
+</div>
+</div>
+<!-- Expand Button -->
+<button class="w-full py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 transition-colors mt-2 shadow-xs">
+<span class="">Expand #08 Alien, #09 Eternal Sunshine &amp; #10 Stalker</span>
+<span class="material-symbols-outlined text-lg text-slate-400">expand_more</span>
+</button>
+</div>
+</main>
+<!-- RIGHT SIDEBAR / COMMUNITY WIDGET RAIL (4 COLS) -->
+<aside class="lg:col-span-4 flex flex-col gap-6">
+<!-- WIDGET 1: LIVE COMMUNITY ARENA POLL -->
+<div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-amber-700 font-bold">Arena Vote Live</span>
+</div>
+<span class="font-body-sm text-body-sm text-slate-400 font-medium">Closes in 4h</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-slate-900 mb-2 font-bold">
+              Which 2024 Sci-Fi Film Deserves a Top 5 Spot?
+            </h3>
+<p class="font-body-sm text-body-sm text-slate-500 mb-5">
+              Live consensus battle between premier theatrical milestones.
+            </p>
+<!-- Poll Options -->
+<div class="space-y-3">
+<!-- Option 1 (Leading) -->
+<div class="p-3 rounded-xl bg-slate-50 hover:bg-amber-50/60 border border-slate-200 transition-colors cursor-pointer group">
+<div class="flex items-center justify-between font-label-lg text-label-lg mb-1.5">
+<span class="text-slate-900 font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-amber-600 text-base">check_circle</span>
+                    Dune: Part Two
+                  </span>
+<span class="text-amber-700 font-bold">64%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-slate-200 overflow-hidden">
+<div class="h-full bg-amber-500 rounded-full" style="width: 64%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-slate-500 mt-1 block">18,420 votes</span>
+</div>
+<!-- Option 2 -->
+<div class="p-3 rounded-xl bg-slate-50 hover:bg-slate-100/80 border border-slate-200 transition-colors cursor-pointer group">
+<div class="flex items-center justify-between font-label-lg text-label-lg mb-1.5">
+<span class="text-slate-800 font-medium">Furiosa: Mad Max Saga</span>
+<span class="text-slate-600 font-bold">22%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-slate-200 overflow-hidden">
+<div class="h-full bg-slate-400 rounded-full" style="width: 22%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-slate-500 mt-1 block">6,310 votes</span>
+</div>
+<!-- Option 3 -->
+<div class="p-3 rounded-xl bg-slate-50 hover:bg-slate-100/80 border border-slate-200 transition-colors cursor-pointer group">
+<div class="flex items-center justify-between font-label-lg text-label-lg mb-1.5">
+<span class="text-slate-800 font-medium">Alien: Romulus</span>
+<span class="text-slate-600 font-bold">14%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-slate-200 overflow-hidden">
+<div class="h-full bg-slate-300 rounded-full" style="width: 14%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-slate-500 mt-1 block">4,012 votes</span>
+</div>
+</div>
+<button class="w-full mt-4 py-2.5 rounded-full bg-amber-500 hover:bg-amber-600 text-white font-label-lg text-label-lg font-bold transition-all shadow-sm shadow-amber-500/30">
+              Cast Instant Ballot
+            </button>
+</div>
+<!-- WIDGET 2: TOP RANKED CRITICS LEADERBOARD -->
+<div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold">Guild Critics</h3>
+<span class="font-label-sm text-label-sm text-amber-700 uppercase font-bold tracking-wider">Top Reputation</span>
+</div>
+<div class="space-y-4">
+<!-- Critic 1 -->
+<div class="flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover border border-slate-200" data-alt="Portrait avatar of male film theorist with round glasses against atmospheric moody amber lighting background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ0Q-2m7tFO5u022CvZJFiCIkRx7CYNp02tf38CP_cwbCFpbfA7EEbN6I0gbtDN3p2_iFz0o4X1_kCNDq4cuDmUWAL1xvJQf1txzDxSvHISjiGYhQkEGFchxIq5g11Qubnr2zhsZk6qux4mAibKqT--HkMi-p3L6_h8ENXxjAVbs573S21OsPouyWmyH1-j5Eh4lF5p-5ESA3p2T_8YmT-wgiMJwkNYuKyQBcFBw">
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-amber-500 text-white font-label-sm text-[10px] flex items-center justify-center font-bold ring-2 ring-white">1</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-slate-900 font-bold block">Julian Vance-Sloan</span>
+<span class="font-label-sm text-label-sm text-amber-700 font-semibold">Grandmaster Critic</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-slate-700 font-bold">98.4 rep</span>
+</div>
+<!-- Critic 2 -->
+<div class="flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover border border-slate-200" data-alt="Portrait avatar of female anime and cyberpunk cinema scholar in Tokyo night street background with blurred neon amber signage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnD_imbAPZcMaUK_JearBX2JHdUVBTWGtqC6tfBn-S3SunfQyA8faj8udE7J4VSX4RqOYBuVHywhRHPXq5qBNfWNrXmpcEfAwl9K7aBg0ExXT5bz4q0-myjZc_BdZYf2xXnX5XVZdiE-cQ5m-uPgzNY7D0AFqktL0skRcCz6m6_htedBThCzVFFrsNx5WP2w_wlJavBlbeOtxAknGv-X5REDFdI0hGM3LJdkZtXg">
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-slate-200 text-slate-700 font-label-sm text-[10px] flex items-center justify-center font-bold ring-2 ring-white">2</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-slate-900 font-bold block">Aoi Takahashi</span>
+<span class="font-label-sm text-label-sm text-slate-500 font-medium">Animation Fellow</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-slate-700 font-bold">96.1 rep</span>
+</div>
+<!-- Critic 3 -->
+<div class="flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover border border-slate-200" data-alt="Close up portrait of tech and gaming hardware critic wearing studio headphones with warm studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuvoS2Ffd7tnZveloM18EA-brJSYMZpK6cIOVMm0kKbKOt9nGhI184QPHVgyrgPfSLn-CMq9iZHInVterBocFsZA9ID6wvBivB6FmYwgD2D9ax7li4q9A6syJDrUSFb4Xc7FJjWDLGMssN6KCe14nI2k3uGGbBwYShk9Yel4WWPUGZULgKxU8osJ_kmDTKE9wPWHWconuxh_13Txt7J94FdytCTdq7slhgIHP3sw">
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-slate-200 text-slate-700 font-label-sm text-[10px] flex items-center justify-center font-bold ring-2 ring-white">3</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-slate-900 font-bold block">Marcus Chen</span>
+<span class="font-label-sm text-label-sm text-slate-500 font-medium">Silicon Benchmarker</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-slate-700 font-bold">94.8 rep</span>
+</div>
+</div>
+<button class="w-full mt-5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-label-md text-label-md font-semibold transition-colors border border-slate-200">
+              View All 892 Guild Members
+            </button>
+</div>
+<!-- WIDGET 3: TRENDING COUNTDOWNS THIS WEEK -->
+<div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm">
+<h3 class="font-headline-sm text-headline-sm text-slate-900 mb-4 font-bold">Trending Universes</h3>
+<div class="space-y-3">
+<!-- Item A -->
+<a class="p-3 rounded-xl bg-slate-50 hover:bg-amber-50/50 border border-slate-200/80 flex items-center gap-3 transition-colors group" href="#">
+<img class="w-12 h-12 rounded-lg object-cover shrink-0 border border-slate-200 shadow-xs" data-alt="Dreamy lush magical forest with flying spirit creatures in traditional Japanese watercolor Ghibli animation style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKDV6PDaZastzkY5g8lGcfox8oVlN8W-qRNEGdjV_5gxzylAYW3DBES2syJjAFUgrH9X38_p-ffGf9lIHZeSg0J0kDG0tEUSQZWWXmA1SUd-zOKBb8kWjK-HCr7l6XkxnRADOeXwEDr_tku6_xojBEX-siggVCfjhki24v-J0WeUxdq41jHiQ4u7sMfrwVLNO0nS27EUO1SNdmLar3j6xD1kvTDEKQ0yTqzKmZeg">
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-amber-700 font-semibold block uppercase tracking-wider">Top 10 Masterpieces</span>
+<h5 class="font-label-lg text-label-lg text-slate-900 font-bold truncate group-hover:text-amber-700 transition-colors">Studio Ghibli: The Golden Era</h5>
+<span class="font-body-sm text-body-sm text-slate-500">114k votes • Curated</span>
+</div>
+</a>
+<!-- Item B -->
+<a class="p-3 rounded-xl bg-slate-50 hover:bg-amber-50/50 border border-slate-200/80 flex items-center gap-3 transition-colors group" href="#">
+<img class="w-12 h-12 rounded-lg object-cover shrink-0 border border-slate-200 shadow-xs" data-alt="Dark fantasy gothic colossal boss creature glowing with embers holding massive greatsword in Elden Ring Souls aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD8BOF9T_3J1fCJ15ykVST64jhtjlzSoGy4eignZLpuR-VPRAzCnMhZLvrqZc-nWv9_6aPutpRXQyrfO0DW8PQxqjR-ntW4isz59H_FngBsZVoRSxQ4iLK2qxgBq9uIhkgGMOG5fcStKibSOi26C-Vb7L5TifS4HN6ZYOnY6FAysf_QQ1qeK78c9MFtl4nBfIh3mUAKewiRoyEwkPbmCloOdVUxtvYaUOpsrkMcQ">
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-amber-700 font-semibold block uppercase tracking-wider">Gaming Benchmarks</span>
+<h5 class="font-label-lg text-label-lg text-slate-900 font-bold truncate group-hover:text-amber-700 transition-colors">Top 10 Soulslike Boss Fights</h5>
+<span class="font-body-sm text-body-sm text-slate-500">89k votes • Heated debate</span>
+</div>
+</a>
+<!-- Item C -->
+<a class="p-3 rounded-xl bg-slate-50 hover:bg-amber-50/50 border border-slate-200/80 flex items-center gap-3 transition-colors group" href="#">
+<img class="w-12 h-12 rounded-lg object-cover shrink-0 border border-slate-200 shadow-xs" data-alt="Cybernetic futuristic warrior standing over megacity rooftop under massive holographic moon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPm0nZJdelKeY2lm96trVysh3fcHV_VYahXNHWb-eSENw9oVkYagd_hwHe9pckNPpz2L1IvC_z7bUJqh-rtJPiNI2LpMyaNid1Pc2-OBvDJEYXNHGIwNHCM-s4gIzBXjkAns4aefUBWwJWW-mnbo2GY0Hr3vvnnAVKVMd1X6QWjLCSjWLNBczabvfDIHy9eI6VY5LLvvw5_rpgLE_vpz2daEXkprD3ykApVvnKRw">
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-slate-500 font-semibold block uppercase tracking-wider">Anime Pantheon</span>
+<h5 class="font-label-lg text-label-lg text-slate-900 font-bold truncate group-hover:text-amber-700 transition-colors">Top 10 Cyberpunk Anime Serials</h5>
+<span class="font-body-sm text-body-sm text-slate-500">63k votes • Updated today</span>
+</div>
+</a>
+</div>
+</div>
+<!-- WIDGET 4: SUBMIT NEW CANON BANNER -->
+<div class="p-6 rounded-2xl bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-white border border-amber-300/60 shadow-sm relative overflow-hidden">
+<span class="material-symbols-outlined text-amber-600 text-3xl mb-2">rate_review</span>
+<h4 class="font-headline-sm text-headline-sm text-slate-900 mb-2 font-bold">Think You Know Better?</h4>
+<p class="font-body-sm text-body-sm text-slate-600 mb-4">
+              Construct your personal Top 10 countdown and submit it to the AZVerse consensus engine for community validation.
+            </p>
+<button class="w-full py-2.5 rounded-full bg-amber-500 hover:bg-amber-600 text-white font-label-lg text-label-lg font-bold transition-all shadow-sm shadow-amber-500/30">
+              Build Your Countdown List
+            </button>
+</div>
+<div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex flex-col gap-5"><div class="flex flex-col gap-1"><div class="flex items-center justify-between"><div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-50 border border-amber-200/70 text-amber-800 font-label-sm text-label-sm font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-sm text-amber-600">bolt</span><span class="">Short List Archives</span></div><span class="font-label-sm text-label-sm text-slate-400 font-semibold">4.2k daily readers</span></div><h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold tracking-tight mt-1">Rapid Top 10s: Short Lists &amp; Archives</h3><p class="font-body-sm text-body-sm text-slate-500">Instant 60-second breakdowns &amp; reader consensus rankings</p></div><div class="flex items-center gap-1.5 overflow-x-auto pb-1"><button class="px-3 py-1 rounded-full bg-amber-500 text-white font-label-sm text-label-sm font-bold shadow-xs whitespace-nowrap">All Short Lists</button><button class="px-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-label-sm text-label-sm font-medium border border-slate-200/70 whitespace-nowrap transition-colors">🎮 Gaming</button><button class="px-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-label-sm text-label-sm font-medium border border-slate-200/70 whitespace-nowrap transition-colors">🩸 Horror</button><button class="px-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-label-sm text-label-sm font-medium border border-slate-200/70 whitespace-nowrap transition-colors">🌋 Disasters &amp; History</button></div><div class="flex flex-col gap-4 divide-y divide-slate-100"><div class="pt-2 flex flex-col gap-2.5 group"><div class="flex items-center justify-between text-xs"><span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-label-sm text-label-sm font-semibold border border-slate-200/80">Horror &amp; Games</span><div class="flex items-center gap-2 text-slate-500 font-body-sm text-xs"><span class="">42.8k Votes</span><span class="">•</span><span class="text-amber-700 font-bold flex items-center gap-0.5"><span class="material-symbols-outlined text-xs text-amber-600">star</span> 9.7 Verdict</span></div></div><h4 class="font-label-lg text-label-lg text-slate-900 font-bold group-hover:text-amber-700 transition-colors cursor-pointer">Top 10 Survival Horror Games That Broke Our Minds</h4><div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200/80 text-xs font-body-sm text-slate-600 flex flex-col gap-1"><div class="flex items-center gap-1.5 text-amber-800 font-semibold font-label-sm"><span class="material-symbols-outlined text-sm text-amber-600">verified</span><span class="">Peak Consensus: Silent Hill 2 (Remake)</span></div><p class="truncate text-slate-500 text-[11px]">#1 Silent Hill 2 • #2 Resident Evil 2 Remake • #3 Dead Space • #4 Alien: Isolation</p></div><div class="flex items-center justify-between pt-0.5"><span class="font-label-sm text-slate-400">60-Sec Reading Time</span><a class="font-label-sm text-label-sm text-amber-700 hover:text-amber-800 font-bold inline-flex items-center gap-1 transition-colors" href="#"><span class="">View Full Top 10</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div><div class="pt-4 flex flex-col gap-2.5 group"><div class="flex items-center justify-between text-xs"><span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-label-sm text-label-sm font-semibold border border-slate-200/80">History &amp; Disasters</span><div class="flex items-center gap-2 text-slate-500 font-body-sm text-xs"><span class="">88.4k Votes</span><span class="">•</span><span class="text-amber-700 font-bold flex items-center gap-0.5"><span class="material-symbols-outlined text-xs text-amber-600">star</span> 9.9 Historical Weight</span></div></div><h4 class="font-label-lg text-label-lg text-slate-900 font-bold group-hover:text-amber-700 transition-colors cursor-pointer">Top 10 Historic &amp; Cosmic Disasters of All Time</h4><div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200/80 text-xs font-body-sm text-slate-600 flex flex-col gap-1"><div class="flex items-center gap-1.5 text-amber-800 font-semibold font-label-sm"><span class="material-symbols-outlined text-sm text-amber-600">verified</span><span class="">Peak Consensus: Chernobyl 1986</span></div><p class="truncate text-slate-500 text-[11px]">#1 The 1815 Tambora Eruption • #2 Tunguska Event 1908 • #3 Titanic Void • #4 Pompeii Vesuvius</p></div><div class="flex items-center justify-between pt-0.5"><span class="font-label-sm text-slate-400">60-Sec Reading Time</span><a class="font-label-sm text-label-sm text-amber-700 hover:text-amber-800 font-bold inline-flex items-center gap-1 transition-colors" href="#"><span class="">View Full Top 10</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div><div class="pt-4 flex flex-col gap-2.5 group"><div class="flex items-center justify-between text-xs"><span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-label-sm text-label-sm font-semibold border border-slate-200/80">Gaming Benchmark</span><div class="flex items-center gap-2 text-slate-500 font-body-sm text-xs"><span class="">112.5k Votes</span><span class="">•</span><span class="text-amber-700 font-bold flex items-center gap-0.5"><span class="material-symbols-outlined text-xs text-amber-600">star</span> 9.8 Verdict</span></div></div><h4 class="font-label-lg text-label-lg text-slate-900 font-bold group-hover:text-amber-700 transition-colors cursor-pointer">Top 10 Open-World Games with Unrivaled Immersion</h4><div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200/80 text-xs font-body-sm text-slate-600 flex flex-col gap-1"><div class="flex items-center gap-1.5 text-amber-800 font-semibold font-label-sm"><span class="material-symbols-outlined text-sm text-amber-600">verified</span><span class="">Peak Consensus: Red Dead Redemption 2</span></div><p class="truncate text-slate-500 text-[11px]">#1 Red Dead Redemption 2 • #2 The Witcher 3 • #3 Elden Ring • #4 Zelda: BotW</p></div><div class="flex items-center justify-between pt-0.5"><span class="font-label-sm text-slate-400">60-Sec Reading Time</span><a class="font-label-sm text-label-sm text-amber-700 hover:text-amber-800 font-bold inline-flex items-center gap-1 transition-colors" href="#"><span class="">View Full Top 10</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div><div class="pt-4 flex flex-col gap-2.5 group"><div class="flex items-center justify-between text-xs"><span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-label-sm text-label-sm font-semibold border border-slate-200/80">Cinema Noir &amp; Horror</span><div class="flex items-center gap-2 text-slate-500 font-body-sm text-xs"><span class="">64.1k Votes</span><span class="">•</span><span class="text-amber-700 font-bold flex items-center gap-0.5"><span class="material-symbols-outlined text-xs text-amber-600">star</span> 9.6 Verdict</span></div></div><h4 class="font-label-lg text-label-lg text-slate-900 font-bold group-hover:text-amber-700 transition-colors cursor-pointer">Top 10 Psychological Horror Films That Never Leave You</h4><div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200/80 text-xs font-body-sm text-slate-600 flex flex-col gap-1"><div class="flex items-center gap-1.5 text-amber-800 font-semibold font-label-sm"><span class="material-symbols-outlined text-sm text-amber-600">verified</span><span class="">Peak Consensus: The Shining</span></div><p class="truncate text-slate-500 text-[11px]">#1 The Shining (1980) • #2 Hereditary (2018) • #3 Cure (1997) • #4 Rosemary's Baby</p></div><div class="flex items-center justify-between pt-0.5"><span class="font-label-sm text-slate-400">60-Sec Reading Time</span><a class="font-label-sm text-label-sm text-amber-700 hover:text-amber-800 font-bold inline-flex items-center gap-1 transition-colors" href="#"><span class="">View Full Top 10</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div></div><button class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-700 font-label-md text-label-md font-semibold border border-slate-200/90 transition-colors flex items-center justify-center gap-1.5 shadow-xs"><span class="material-symbols-outlined text-base text-slate-400">view_list</span><span class="">Explore All 120+ Rapid Top 10 Archives</span></button></div></aside>
+</div>
+</div><!-- SECTION 1: CURATED FLAGSHIP TOP 10 HUBS (MULTI-GENRE LISTICLE GRID) -->
+<section class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-12 border-t border-slate-200/80 bg-white/60">
+<div class="max-w-7xl mx-auto flex flex-col gap-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200/70 text-amber-800 font-label-sm text-label-sm font-bold uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-base text-amber-600">auto_awesome</span>
+          Consensus Matrix Explorations
+        </div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-slate-900 tracking-tight font-bold">
+          Trending Universes: Fresh Top 10 Countdowns
+        </h2>
+<p class="mt-1 font-body-md text-body-md text-slate-600 max-w-2xl">
+          Explore peer-audited and guild-ranked listicles across cinema, milestone gaming, cyberpunk animation, and prestige television.
+        </p>
+</div>
+<!-- Interactive Category Switcher -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0">
+<button class="px-4 py-2 rounded-full bg-amber-500 text-white font-label-md text-label-md font-bold shadow-xs whitespace-nowrap">All Ranked</button>
+<button class="px-4 py-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-label-md text-label-md font-semibold transition-colors border border-slate-200/60 whitespace-nowrap">Anime &amp; Animation</button>
+<button class="px-4 py-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-label-md text-label-md font-semibold transition-colors border border-slate-200/60 whitespace-nowrap">Gaming Masterpieces</button>
+<button class="px-4 py-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-label-md text-label-md font-semibold transition-colors border border-slate-200/60 whitespace-nowrap">Dark Noir &amp; Thrillers</button>
+<button class="px-4 py-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-label-md text-label-md font-semibold transition-colors border border-slate-200/60 whitespace-nowrap">Prestige TV Epics</button>
+</div>
+</div>
+<!-- 4-Grid Multi-Genre Countdown Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: Anime Masterpiece -->
+<div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm overflow-hidden flex flex-col group hover:shadow-md hover:border-amber-400/60 transition-all">
+<div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+<img alt="Studio Ghibli aesthetic animated landscapes" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKDV6PDaZastzkY5g8lGcfox8oVlN8W-qRNEGdjV_5gxzylAYW3DBES2syJjAFUgrH9X38_p-ffGf9lIHZeSg0J0kDG0tEUSQZWWXmA1SUd-zOKBb8kWjK-HCr7l6XkxnRADOeXwEDr_tku6_xojBEX-siggVCfjhki24v-J0WeUxdq41jHiQ4u7sMfrwVLNO0nS27EUO1SNdmLar3j6xD1kvTDEKQ0yTqzKmZeg">
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md text-amber-800 font-label-sm text-label-sm font-bold shadow-xs border border-amber-200/50">Anime Pantheon</div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-slate-900/85 backdrop-blur-md text-white font-label-sm text-label-sm font-bold shadow-xs">9.7 Score</div>
+<div class="absolute bottom-2 left-3 right-3 px-3 py-1.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-xs flex items-center justify-between">
+<span class="text-slate-300 font-medium">#1 Peak:</span>
+<span class="font-bold truncate text-amber-300 ml-1">Spirited Away (4K Restored)</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between gap-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold tracking-tight group-hover:text-amber-700 transition-colors line-clamp-2">
+              Top 10 Studio Ghibli Masterpieces Ranked by Thematic Depth
+            </h3>
+<p class="mt-1.5 font-body-sm text-body-sm text-slate-600 line-clamp-2">
+              From environmental mythos to wartime grief, our animation guild ranks Miyazaki and Takahata's finest moments.
+            </p>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between font-label-sm text-label-sm text-slate-500">
+<div class="flex items-center gap-2">
+<img alt="Critic Avatar" class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnD_imbAPZcMaUK_JearBX2JHdUVBTWGtqC6tfBn-S3SunfQyA8faj8udE7J4VSX4RqOYBuVHywhRHPXq5qBNfWNrXmpcEfAwl9K7aBg0ExXT5bz4q0-myjZc_BdZYf2xXnX5XVZdiE-cQ5m-uPgzNY7D0AFqktL0skRcCz6m6_htedBThCzVFFrsNx5WP2w_wlJavBlbeOtxAknGv-X5REDFdI0hGM3LJdkZtXg">
+<span class="font-semibold text-slate-700 truncate max-w-[100px]">Aoi Takahashi</span>
+</div>
+<div class="flex items-center gap-1 text-slate-600">
+<span class="material-symbols-outlined text-sm text-amber-600">how_to_vote</span>
+<span class="">84.2k votes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Gaming Masterpieces -->
+<div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm overflow-hidden flex flex-col group hover:shadow-md hover:border-amber-400/60 transition-all">
+<div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+<img alt="FromSoftware gothic dark fantasy aesthetic" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD8BOF9T_3J1fCJ15ykVST64jhtjlzSoGy4eignZLpuR-VPRAzCnMhZLvrqZc-nWv9_6aPutpRXQyrfO0DW8PQxqjR-ntW4isz59H_FngBsZVoRSxQ4iLK2qxgBq9uIhkgGMOG5fcStKibSOi26C-Vb7L5TifS4HN6ZYOnY6FAysf_QQ1qeK78c9MFtl4nBfIh3mUAKewiRoyEwkPbmCloOdVUxtvYaUOpsrkMcQ">
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md text-amber-800 font-label-sm text-label-sm font-bold shadow-xs border border-amber-200/50">Gaming Benchmarks</div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-slate-900/85 backdrop-blur-md text-white font-label-sm text-label-sm font-bold shadow-xs">9.6 Score</div>
+<div class="absolute bottom-2 left-3 right-3 px-3 py-1.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-xs flex items-center justify-between">
+<span class="text-slate-300 font-medium">#1 Peak:</span>
+<span class="font-bold truncate text-amber-300 ml-1">Shadow of Erdtree: Messmer</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between gap-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold tracking-tight group-hover:text-amber-700 transition-colors line-clamp-2">
+              Top 10 Soulslike Boss Encounters Ranked by Mechanics &amp; Lore
+            </h3>
+<p class="mt-1.5 font-body-sm text-body-sm text-slate-600 line-clamp-2">
+              From Ornstein &amp; Smough to Malenia, dissecting combat pacing, punish windows, and emotional orchestration.
+            </p>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between font-label-sm text-label-sm text-slate-500">
+<div class="flex items-center gap-2">
+<img alt="Critic Avatar" class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuvoS2Ffd7tnZveloM18EA-brJSYMZpK6cIOVMm0kKbKOt9nGhI184QPHVgyrgPfSLn-CMq9iZHInVterBocFsZA9ID6wvBivB6FmYwgD2D9ax7li4q9A6syJDrUSFb4Xc7FJjWDLGMssN6KCe14nI2k3uGGbBwYShk9Yel4WWPUGZULgKxU8osJ_kmDTKE9wPWHWconuxh_13Txt7J94FdytCTdq7slhgIHP3sw">
+<span class="font-semibold text-slate-700 truncate max-w-[100px]">Marcus Chen</span>
+</div>
+<div class="flex items-center gap-1 text-slate-600">
+<span class="material-symbols-outlined text-sm text-amber-600">how_to_vote</span>
+<span class="">102.5k votes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: Dark Noir & Mystery Thrillers -->
+<div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm overflow-hidden flex flex-col group hover:shadow-md hover:border-amber-400/60 transition-all">
+<div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+<img alt="Moody noir rain-soaked alley cinema aesthetic" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASsxnqku2XZ-Ye_5JuaAin4IJ7-QJnlmfCTeNZQp95UOQY2rxWvYSJPC3DWzrPbwLLVcWMGqZr3QEwiuMkzI_shdYwWK-LsGxePoxtr_XLPXoMUPZOAc-BX3MTAgp07hQd_yFm8uvM_enx6DLMpsClbD-jQE8doyKbS3cJEXlrEw8ZZ2CpjxJ6UOR1-71RR5u0umdBTWVXIUIw0892m_QR6OKW7x0AMUS9nzYHTw">
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md text-amber-800 font-label-sm text-label-sm font-bold shadow-xs border border-amber-200/50">Dark Noir Canons</div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-slate-900/85 backdrop-blur-md text-white font-label-sm text-label-sm font-bold shadow-xs">9.8 Score</div>
+<div class="absolute bottom-2 left-3 right-3 px-3 py-1.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-xs flex items-center justify-between">
+<span class="text-slate-300 font-medium">#1 Peak:</span>
+<span class="font-bold truncate text-amber-300 ml-1">Se7en: The Desert Revelation</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between gap-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold tracking-tight group-hover:text-amber-700 transition-colors line-clamp-2">
+              Top 10 Psychological Thrillers with Devastating Third Acts
+            </h3>
+<p class="mt-1.5 font-body-sm text-body-sm text-slate-600 line-clamp-2">
+              Films that completely dismantle audience perception in the final ten minutes without relying on cheap gimmicks.
+            </p>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between font-label-sm text-label-sm text-slate-500">
+<div class="flex items-center gap-2">
+<img alt="Critic Avatar" class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ0Q-2m7tFO5u022CvZJFiCIkRx7CYNp02tf38CP_cwbCFpbfA7EEbN6I0gbtDN3p2_iFz0o4X1_kCNDq4cuDmUWAL1xvJQf1txzDxSvHISjiGYhQkEGFchxIq5g11Qubnr2zhsZk6qux4mAibKqT--HkMi-p3L6_h8ENXxjAVbs573S21OsPouyWmyH1-j5Eh4lF5p-5ESA3p2T_8YmT-wgiMJwkNYuKyQBcFBw">
+<span class="font-semibold text-slate-700 truncate max-w-[100px]">Julian Vance-Sloan</span>
+</div>
+<div class="flex items-center gap-1 text-slate-600">
+<span class="material-symbols-outlined text-sm text-amber-600">how_to_vote</span>
+<span class="">67.1k votes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4: Prestige TV Epics -->
+<div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm overflow-hidden flex flex-col group hover:shadow-md hover:border-amber-400/60 transition-all">
+<div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+<img alt="Modern architecture boardroom drama lighting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG7w4aXu_1iNhn3gCyHUWckgKwjb87hak9_GFD9wkB1TAw3oSa90gQ7IFmJmjvPL1TE95T4LhSNs-diDK1Ay7BswsQ93RvaZxd1UuaOyVoy6dGZyu4NwneDRGiIsjeixzJnfoOzZrGsDnAdv01dFeINWeX7Ls4w4w6wY7zHtifRCdHJS3zZTUp396CagvxXK1wX4gwAPyYhZb5Yb5iNZEn2Bx4RrQOO-hZ78zeuQ">
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md text-amber-800 font-label-sm text-label-sm font-bold shadow-xs border border-amber-200/50">Prestige Television</div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-slate-900/85 backdrop-blur-md text-white font-label-sm text-label-sm font-bold shadow-xs">9.5 Score</div>
+<div class="absolute bottom-2 left-3 right-3 px-3 py-1.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-xs flex items-center justify-between">
+<span class="text-slate-300 font-medium">#1 Peak:</span>
+<span class="font-bold truncate text-amber-300 ml-1">Succession: Connor's Wedding</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between gap-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold tracking-tight group-hover:text-amber-700 transition-colors line-clamp-2">
+              Top 10 Prestige Television Episodes of the Streaming Era
+            </h3>
+<p class="mt-1.5 font-body-sm text-body-sm text-slate-600 line-clamp-2">
+              From Breaking Bad's Ozymandias to Severance's The We We Are, ranking hour-long writing perfection.
+            </p>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between font-label-sm text-label-sm text-slate-500">
+<div class="flex items-center gap-2">
+<img alt="Critic Avatar" class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnArpLctY1ddO6DMdn3hm44D8q32xwAj63nOoFaPhyHkmNJHhNv-vfSY4Ni-8c7UGJxEqj7wS6AETPNaDLuORrmaurN--Da0YLkujZeCezFrlHFzLQJUaLhcWdmZDWDnvJsvcls_HUSJaHN192Y-XKukFAmiVYWJ12MRWPWycFO_u0KTjuoPlHT5zQNJhSQEx7UoDhSpTiDYOpToa0z6DTyzFJRxe4w502ASwo8Q">
+<span class="font-semibold text-slate-700 truncate max-w-[100px]">Elena Vance</span>
+</div>
+<div class="flex items-center gap-1 text-slate-600">
+<span class="material-symbols-outlined text-sm text-amber-600">how_to_vote</span>
+<span class="">79.8k votes</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: LONG-FORM EDITORIAL DEEP DIVES & RETROSPECTIVES -->
+<section class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-14 bg-[#f8fafc]">
+<div class="max-w-7xl mx-auto flex flex-col gap-8">
+<div class="flex items-center justify-between">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 text-amber-800 font-label-sm text-label-sm font-bold uppercase tracking-wider mb-2 border border-amber-500/20">
+<span class="material-symbols-outlined text-base text-amber-600">article</span>
+          Guild Journalism
+        </div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-slate-900 tracking-tight font-bold">
+          From The Guild: Long-form Deep Dives &amp; Retrospectives
+        </h2>
+</div>
+<a class="hidden sm:inline-flex items-center gap-1 text-amber-700 hover:text-amber-800 font-label-lg text-label-lg font-bold transition-colors" href="#">
+<span class="">Browse Archive</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Magazine Layout: Hero Article (7 Cols) + 3 Stacked Articles (5 Cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Hero Feature Article -->
+<article class="lg:col-span-7 bg-white rounded-3xl border border-slate-200/90 shadow-sm p-6 md:p-8 flex flex-col justify-between group hover:shadow-md hover:border-amber-400/50 transition-all">
+<div class="flex flex-col gap-5">
+<div class="relative aspect-[21/10] w-full rounded-2xl overflow-hidden shadow-xs border border-slate-200">
+<img alt="Cinematic vast desert dunes in Dune Denis Villeneuve visual style" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXsvnzo2MZkQfN1mSTjHRE-ZvdC0WjnZQqvKjNsZVVh43ghhnkufLHq7nvj6cBsvYO14zvTI6a5WNT0wab3zSo9c6VdtEeUvZa0nsXP-hXf8lMNIYxudO9dOygmdK8ceaKzkq2wwlRAHE8_nygXqEXRjz5J8k-fJvyrjx7a2dGu85d1zDPRnUnDj6QVEh7fOKaiUsZUD1TV3cQclWZ64fmCFzmMOzvdgQHBJog8Q">
+<div class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-amber-400 font-label-sm text-label-sm font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs">schedule</span> 14 min read
+            </div>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-2 font-label-sm text-label-sm text-slate-500">
+<span class="font-bold text-amber-700 uppercase tracking-wider">Directorial Aesthetics</span>
+<span class="">•</span>
+<span class="">Masterclass Retrospective</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-slate-900 font-bold tracking-tight group-hover:text-amber-700 transition-colors leading-snug">
+              The Geometry of Dread: How Denis Villeneuve Weaponizes Scale in Modern Cinema
+            </h3>
+<blockquote class="mt-4 p-4 rounded-xl bg-slate-50 border-l-4 border-amber-500 text-slate-700 font-body-md text-body-md italic">
+              “Villeneuve doesn't shoot environments; he shoots indifferent monoliths that swallow human hubris whole, forcing sound design and negative space into violent psychological combat.”
+            </blockquote>
+</div>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="Elena Vance" class="w-9 h-9 rounded-full object-cover ring-1 ring-slate-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnArpLctY1ddO6DMdn3hm44D8q32xwAj63nOoFaPhyHkmNJHhNv-vfSY4Ni-8c7UGJxEqj7wS6AETPNaDLuORrmaurN--Da0YLkujZeCezFrlHFzLQJUaLhcWdmZDWDnvJsvcls_HUSJaHN192Y-XKukFAmiVYWJ12MRWPWycFO_u0KTjuoPlHT5zQNJhSQEx7UoDhSpTiDYOpToa0z6DTyzFJRxe4w502ASwo8Q">
+<div>
+<span class="font-label-md text-label-md text-slate-900 font-bold block">Elena Vance</span>
+<span class="font-body-sm text-body-sm text-slate-500">Chief Cinema Lead</span>
+</div>
+</div>
+<button class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-amber-500 hover:text-white text-slate-800 font-label-md text-label-md font-bold transition-all border border-slate-200 flex items-center gap-1.5 shadow-xs">
+<span class="">Read Essay</span>
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</button>
+</div>
+</article>
+<!-- 3 Stacked Articles -->
+<div class="lg:col-span-5 flex flex-col justify-between gap-4">
+<!-- Stack Item 1 -->
+<article class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-5 hover:shadow-md hover:border-slate-300 transition-all flex gap-4 items-center group">
+<img alt="Akira neon motorcycle aesthetic" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPm0nZJdelKeY2lm96trVysh3fcHV_VYahXNHWb-eSENw9oVkYagd_hwHe9pckNPpz2L1IvC_z7bUJqh-rtJPiNI2LpMyaNid1Pc2-OBvDJEYXNHGIwNHCM-s4gIzBXjkAns4aefUBWwJWW-mnbo2GY0Hr3vvnnAVKVMd1X6QWjLCSjWLNBczabvfDIHy9eI6VY5LLvvw5_rpgLE_vpz2daEXkprD3ykApVvnKRw">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-amber-700 font-bold uppercase tracking-wider mb-1">
+<span class="">Animation Craft</span>
+<span class="text-slate-400 font-normal">• 8 min read</span>
+</div>
+<h4 class="font-headline-sm text-sm text-slate-900 font-bold group-hover:text-amber-700 transition-colors line-clamp-2">
+              Why Akira’s Hand-Painted Light Trails Still Defy 3D CGI Decades Later
+            </h4>
+<span class="font-body-sm text-xs text-slate-500 mt-1 block">By Aoi Takahashi • 2.4k bookmarked</span>
+</div>
+</article>
+<!-- Stack Item 2 -->
+<article class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-5 hover:shadow-md hover:border-slate-300 transition-all flex gap-4 items-center group">
+<img alt="Disco Elysium mental landscape" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZhuG_7YuewOqb--eWeAiTQ5EUS5dYXOec-YMpZk54HX1gv5nxOtOtT6afnmD5rDHu2akT-25FIt2uq1FCCNfF6uIW8GdEZaTI-GrXTD8MEGT-nKvm-nCwEH_L4t9Zw36SRnUzBJLS0wZzeLCV-pdtRby53MtZO1vrIjY_nPraqfZkWMSdcw75dUj9ETdiFedMSYN7gUmYyYnfGy3BYM9LL01dVN0xMsbdh_QJVQ">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-amber-700 font-bold uppercase tracking-wider mb-1">
+<span class="">Narrative Design</span>
+<span class="text-slate-400 font-normal">• 11 min read</span>
+</div>
+<h4 class="font-headline-sm text-sm text-slate-900 font-bold group-hover:text-amber-700 transition-colors line-clamp-2">
+              The Subversive Brilliance of Disco Elysium’s Thought Cabinet
+            </h4>
+<span class="font-body-sm text-xs text-slate-500 mt-1 block">By Marcus Chen • 3.9k bookmarked</span>
+</div>
+</article>
+<!-- Stack Item 3 -->
+<article class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-5 hover:shadow-md hover:border-slate-300 transition-all flex gap-4 items-center group">
+<img alt="Hans Zimmer Ludwig Goransson acoustic sound wave cinema" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYa1G-JGjoVMd0Kr3udlmPzR2W_GTQ5euQpkqLUJfTZOr50pgsctZlUJZAcwhKOV7kAPzdr8VWriF2vbti1tgFqFwSb2AmbrWfzsBA6SZNUJOHg4w47uwxWROVzTuahKm9nWEhLuLCl9SYPCX7jy3yqtZPG94DvkAgmtTNtuhJiLTngX82WiSPvOc7qupDKe0BHXirjKiVbDQfGNKR-wXRqOzy3qrowT6Wbcn91A">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-amber-700 font-bold uppercase tracking-wider mb-1">
+<span class="">Acoustic Theory</span>
+<span class="text-slate-400 font-normal">• 9 min read</span>
+</div>
+<h4 class="font-headline-sm text-sm text-slate-900 font-bold group-hover:text-amber-700 transition-colors line-clamp-2">
+              Hans Zimmer vs. Ludwig Göransson: The New Sound of Tension
+            </h4>
+<span class="font-body-sm text-xs text-slate-500 mt-1 block">By Julian Vance-Sloan • 4.1k bookmarked</span>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: COMMUNITY HEAD-TO-HEAD ARENA & LIVE DEBATE HUB -->
+<section class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-14 bg-white border-t border-b border-slate-200/80">
+<div class="max-w-7xl mx-auto flex flex-col gap-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200/70 text-amber-800 font-label-sm text-label-sm font-bold uppercase tracking-wider mb-2">
+<span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+          Live Gladiator Debate Ring
+        </div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-slate-900 tracking-tight font-bold">
+          Daily Consensus Arena: The Great Debates
+        </h2>
+<p class="mt-1 font-body-md text-body-md text-slate-600 max-w-2xl">
+          Two titan benchmarks head-to-head. Community cast votes every 24 hours to shift the historical guild score.
+        </p>
+</div>
+<div class="px-4 py-2 rounded-xl bg-slate-100 text-slate-700 font-label-md text-label-md flex items-center gap-2 border border-slate-200">
+<span class="material-symbols-outlined text-base text-amber-600">timer</span>
+<span class="">Round 47 Ends in <strong>06h 42m</strong></span>
+</div>
+</div>
+<!-- Arena Card Matchup -->
+<div class="rounded-3xl border-2 border-amber-400/50 bg-gradient-to-br from-amber-500/5 via-white to-amber-500/10 p-6 md:p-10 shadow-sm relative overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 relative z-10">
+<!-- Contender A: Interstellar -->
+<div class="flex flex-col gap-4 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-slate-200/90 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-amber-500 text-white font-label-sm text-label-sm font-bold uppercase tracking-wider">Challenger A</span>
+<span class="font-headline-md text-headline-md text-amber-700 font-bold">57%</span>
+</div>
+<div class="relative aspect-[16/9] rounded-xl overflow-hidden shadow-xs">
+<img alt="Interstellar black hole" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYa1G-JGjoVMd0Kr3udlmPzR2W_GTQ5euQpkqLUJfTZOr50pgsctZlUJZAcwhKOV7kAPzdr8VWriF2vbti1tgFqFwSb2AmbrWfzsBA6SZNUJOHg4w47uwxWROVzTuahKm9nWEhLuLCl9SYPCX7jy3yqtZPG94DvkAgmtTNtuhJiLTngX82WiSPvOc7qupDKe0BHXirjKiVbDQfGNKR-wXRqOzy3qrowT6Wbcn91A">
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold">Interstellar (2014)</h3>
+<p class="font-body-sm text-body-sm text-slate-600 mt-1">“The visceral emotional propulsion of fatherhood and time dilation makes the cold physics deeply human.”</p>
+</div>
+<button class="w-full py-2.5 rounded-full bg-amber-500 hover:bg-amber-600 text-white font-label-md text-label-md font-bold transition-all shadow-xs flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-base">how_to_vote</span>
+<span class="">Vote Interstellar (32,490 votes)</span>
+</button>
+</div>
+<!-- Contender B: 2001: A Space Odyssey -->
+<div class="flex flex-col gap-4 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-slate-200/90 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-slate-800 text-white font-label-sm text-label-sm font-bold uppercase tracking-wider">Challenger B</span>
+<span class="font-headline-md text-headline-md text-slate-800 font-bold">43%</span>
+</div>
+<div class="relative aspect-[16/9] rounded-xl overflow-hidden shadow-xs">
+<img alt="2001 Space Odyssey monolith" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNute4qCtal4r74q5k_Em7bxcI2XFDCmrkEyGdquyRBKiZbojnZObVdo7sxQsw0xsfOo2fdad9gT9F4xgucM_7Rn4jm_DBOG3UEPt0HSQnoHU_Y7t7XlI_iB8xfk5iAE3E1Dkav-MfJMfsg4Fcs4mv2mv-MPnYCxPL5g8vfSXgZ_jZvQ1-HK5kUt3Q_Hfmqwl6-Mx8Qq58OGz2shcPuuUiCq3YUDFFGTSxhv5fag">
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-slate-900 font-bold">2001: A Space Odyssey (1968)</h3>
+<p class="font-body-sm text-body-sm text-slate-600 mt-1">“Kubrick creates non-verbal cinema of pure cosmic terror. The jump cut from bone to satellite remains unbeatable.”</p>
+</div>
+<button class="w-full py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-label-md text-label-md font-bold transition-all shadow-xs flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-base">how_to_vote</span>
+<span class="">Vote 2001 (24,510 votes)</span>
+</button>
+</div>
+</div>
+<!-- Split Progress Bar -->
+<div class="mt-8 max-w-3xl mx-auto flex flex-col gap-2">
+<div class="w-full h-3 rounded-full bg-slate-200 overflow-hidden flex">
+<div class="bg-amber-500 h-full transition-all" style="width: 57%;"></div>
+<div class="bg-slate-800 h-full transition-all" style="width: 43%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-slate-500 px-1">
+<span class="font-bold text-amber-700">Interstellar: 57% Lead</span>
+<span class="">Total Ballots: 57,000</span>
+<span class="font-bold text-slate-800">2001: 43%</span>
+</div>
+</div>
+<!-- Verified Hot Take Excerpt -->
+<div class="mt-8 pt-6 border-t border-slate-200/80 flex flex-col md:flex-row items-center justify-between gap-4 bg-white/70 p-4 rounded-xl">
+<div class="flex items-center gap-3">
+<img alt="Julian" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ0Q-2m7tFO5u022CvZJFiCIkRx7CYNp02tf38CP_cwbCFpbfA7EEbN6I0gbtDN3p2_iFz0o4X1_kCNDq4cuDmUWAL1xvJQf1txzDxSvHISjiGYhQkEGFchxIq5g11Qubnr2zhsZk6qux4mAibKqT--HkMi-p3L6_h8ENXxjAVbs573S21OsPouyWmyH1-j5Eh4lF5p-5ESA3p2T_8YmT-wgiMJwkNYuKyQBcFBw">
+<div>
+<span class="font-label-md text-label-md text-slate-900 font-bold flex items-center gap-1.5">
+              Julian Vance-Sloan <span class="text-xs px-1.5 py-0.5 rounded bg-amber-100 text-amber-800">Grandmaster Critic</span>
+</span>
+<p class="font-body-sm text-body-sm text-slate-600 italic">“Nolan makes you cry for the daughter; Kubrick makes you shudder for the species. Both are unrepeatable peaks.”</p>
+</div>
+</div>
+<button class="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-label-md text-label-md font-bold transition-all shadow-xs shrink-0 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">rate_review</span>
+<span class="">Cast Your Argument</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: WEEKLY CANON SPOTLIGHT / CURATOR'S PICK -->
+<section class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-12 bg-[#f8fafc]">
+<div class="max-w-7xl mx-auto">
+<div class="relative rounded-3xl overflow-hidden bg-slate-950 text-white p-8 md:p-12 shadow-md border border-slate-800">
+<!-- Ambient backdrop glow -->
+<div class="absolute -right-20 -top-20 w-96 h-96 bg-amber-500/20 blur-[100px] rounded-full pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+<div class="lg:col-span-8 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 font-label-sm text-label-sm font-bold uppercase tracking-wider w-fit">
+<span class="material-symbols-outlined text-base text-amber-400">verified</span>
+            Curator's Weekly Canon Spotlight
+          </div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white font-bold tracking-tight leading-tight">
+            The Overlooked 90s Cyberpunk Animes You Must Stream Before 2025
+          </h2>
+<p class="font-body-lg text-body-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
+            Beyond Ghost in the Shell and Akira: our archival guild unearths 10 hand-cel animation marvels packed with philosophical dread, synthesizer soundscapes, and breathtaking mechanical art.
+          </p>
+<div class="flex flex-wrap items-center gap-4 pt-2 font-label-md text-label-md text-slate-400">
+<span class="flex items-center gap-1 text-amber-400"><span class="material-symbols-outlined text-base">star</span> 9.7 Verdict Average</span>
+<span class="">•</span>
+<span class="">10 Curated Deep-Cuts</span>
+<span class="">•</span>
+<span class="">Updated Yesterday</span>
+</div>
+<div class="pt-4 flex flex-wrap items-center gap-3">
+<a class="px-6 py-3 rounded-full bg-amber-500 hover:bg-amber-600 text-white font-label-lg text-label-lg font-bold transition-all shadow-md flex items-center gap-2" href="#">
+<span class="">Explore Full Top 10 Countdown</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+<button class="px-5 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-label-md text-label-md font-semibold backdrop-blur-md transition-colors border border-white/20 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">bookmark_add</span>
+<span class="">Save to Watchlist</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-4 relative">
+<div class="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/20 shadow-2xl group">
+<img alt="Cyberpunk city rain cel animation visual" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmnB8y59Ui5D7TtVjarHpSGMlidKUqdXRR9kaZ_n8iugJ3yT-YKVSeFFCAMvo7oHYe8zhsJYtetjeDKDEtY2HGgy6OgvDK9fNl1olm31OC6W9odELWeAmewoymU_-YV2rDhJ221vOn9sZrju7O68nbZwXMoDA5eKbVgCpDbPm8demX1D5Q6SkrQt1UnXUok3EhYGW5qBsAmp5CTelVt50thnLxVnEovmGjHMoSVw">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 text-center px-3 py-1.5 rounded-lg bg-black/60 backdrop-blur-md text-amber-300 font-label-sm text-label-sm font-bold">
+              #1 Entry: Battle Angel Alita (1993 OVA)
+            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple interactive tab toggle between Editorial and Visitor Live modes
+  const editorialTab = document.getElementById('tab-editorial');
+  const communityTab = document.getElementById('tab-community');
+
+  if (editorialTab && communityTab) {
+    editorialTab.addEventListener('click', () => {
+      editorialTab.className = "px-4 py-2 rounded-md font-label-md text-label-md font-bold bg-amber-500 text-white shadow-xs transition-all flex items-center gap-1.5";
+      communityTab.className = "px-4 py-2 rounded-md font-label-md text-label-md text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-1.5";
+    });
+
+    communityTab.addEventListener('click', () => {
+      communityTab.className = "px-4 py-2 rounded-md font-label-md text-label-md font-bold bg-amber-500 text-white shadow-xs transition-all flex items-center gap-1.5";
+      editorialTab.className = "px-4 py-2 rounded-md font-label-md text-label-md text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-1.5";
+    });
+  }
+
+  // Cinematic Hero Carousel Logic
+  (function initHeroBackdropCarousel() {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.reel-dot');
+    const indicatorText = document.getElementById('reel-indicator-text');
+    const progressBars = [
+      document.getElementById('progress-bar-0'),
+      document.getElementById('progress-bar-1'),
+      document.getElementById('progress-bar-2'),
+      document.getElementById('progress-bar-3')
+    ];
+
+    if (!slides.length) return;
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    const intervalDuration = 5500;
+    let slideTimer = null;
+    let progressStartTime = Date.now();
+    let animFrame = null;
+
+    function setSlide(index) {
+      currentIndex = (index + totalSlides) % totalSlides;
+
+      slides.forEach((s, idx) => {
+        if (idx === currentIndex) {
+          s.classList.remove('opacity-0');
+          s.classList.add('opacity-100');
+        } else {
+          s.classList.remove('opacity-100');
+          s.classList.add('opacity-0');
+        }
+      });
+
+      dots.forEach((dot, idx) => {
+        if (idx === currentIndex) {
+          dot.className = "reel-dot w-6 h-1.5 rounded-full bg-amber-500 shadow-sm transition-all";
+        } else {
+          dot.className = "reel-dot w-2 h-1.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all";
+        }
+      });
+
+      const currentSlide = slides[currentIndex];
+      const reelTitle = currentSlide.getAttribute('data-label') || 'CINEMATIC BENCHMARK';
+      const reelNum = String(currentIndex + 1).padStart(2, '0');
+      if (indicatorText) {
+        indicatorText.textContent = `LIVE REEL: ${reelNum} / 04 — ${reelTitle}`;
+      }
+
+      progressStartTime = Date.now();
+      updateProgressBars();
+    }
+
+    function updateProgressBars() {
+      const now = Date.now();
+      const elapsed = Math.min(now - progressStartTime, intervalDuration);
+      const pct = (elapsed / intervalDuration) * 100;
+
+      progressBars.forEach((bar, idx) => {
+        if (!bar) return;
+        if (idx < currentIndex) {
+          bar.style.width = '100%';
+        } else if (idx === currentIndex) {
+          bar.style.width = `${pct}%`;
+        } else {
+          bar.style.width = '0%';
+        }
+      });
+
+      if (elapsed < intervalDuration) {
+        animFrame = requestAnimationFrame(updateProgressBars);
+      }
+    }
+
+    function startAutoRotation() {
+      stopAutoRotation();
+      progressStartTime = Date.now();
+      updateProgressBars();
+
+      slideTimer = setInterval(() => {
+        setSlide(currentIndex + 1);
+      }, intervalDuration);
+    }
+
+    function stopAutoRotation() {
+      if (slideTimer) clearInterval(slideTimer);
+      if (animFrame) cancelAnimationFrame(animFrame);
+    }
+
+    dots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        const target = parseInt(dot.getAttribute('data-reel'), 10);
+        setSlide(target);
+        startAutoRotation();
+      });
+    });
+
+    const heroSection = document.getElementById('hero-carousel-section');
+    if (heroSection) {
+      heroSection.addEventListener('mouseenter', () => {
+        // keep smooth, subtle ambient continuation
+      });
+    }
+
+    setSlide(0);
+    startAutoRotation();
+  })();
+</script></main><footer class="w-full bg-white border-t border-slate-200/90 py-space-xl shadow-xs"><div class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-lg pb-space-xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm tracking-tight text-slate-900 uppercase">AZ<span class="ml-1 px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-700 font-label-sm text-label-sm font-bold tracking-widest border border-amber-500/20">VERSE</span></span></div><p class="font-body-md text-body-md text-slate-600 max-w-sm">The definitive cinema-grade canon. Real-time community votes, curated critique, and undeniable rankings across modern media and tech.</p><div class="pt-space-xs max-w-md"><span class="font-label-sm text-label-sm uppercase tracking-wider text-slate-400 block mb-space-xs font-semibold">Subscribe to Midnight Ballot</span><div class="flex items-center gap-space-xs bg-slate-50 border border-slate-200 p-1 rounded-full"><input class="bg-transparent px-space-md py-1.5 font-body-sm text-body-sm text-slate-800 placeholder:text-slate-400 w-full focus:outline-none" placeholder="Enter your critic email..." type="email"><button class="bg-amber-500 hover:bg-amber-600 text-white px-space-md py-1.5 rounded-full font-label-md text-label-md font-bold transition-all shadow-xs">Join</button></div></div></div><div><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-amber-700 font-bold mb-space-md">Ranking Canons</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-slate-600"><li class=""><a class="hover:text-slate-900 transition-colors" data-path="category-movies" href="#">Cinema &amp; Directing</a></li><li class=""><a class="hover:text-slate-900 transition-colors" data-path="category-anime" href="#">Masterpiece Anime</a></li><li class=""><a class="hover:text-slate-900 transition-colors" data-path="category-tech" href="#">Silicon &amp; Hardware</a></li><li class=""><a class="hover:text-slate-900 transition-colors" data-path="category-gaming" href="#">Gaming Benchmarks</a></li><li class=""><a class="hover:text-slate-900 transition-colors" data-path="trending" href="#">All-Time Top 100</a></li></ul></div><div><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-amber-700 font-bold mb-space-md">Community Arena</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-slate-600"><li class=""><a class="hover:text-slate-900 transition-colors" data-path="community-arena" href="#">Live Head-to-Head</a></li><li class=""><a class="hover:text-slate-900 transition-colors" data-path="submit-list" href="#">Create New Listicle</a></li><li class=""><a class="hover:text-slate-900 transition-colors" data-path="user-critic-profile" href="#">Critic Leaderboard</a></li><li class=""><a class="hover:text-slate-900 transition-colors" data-path="discover" href="#">Review Guild Guidelines</a></li></ul></div><div class="bg-slate-50 border border-slate-200/80 p-space-lg rounded-xl space-y-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-widest text-slate-400 block font-semibold">Live Network Metrics</span><div class="space-y-space-xs"><div><span class="font-headline-sm text-headline-sm text-amber-700 font-bold block">2.4M+</span><span class="font-body-sm text-body-sm text-slate-500">Verified Critic Votes</span></div><div><span class="font-headline-sm text-headline-sm text-slate-900 font-bold block">14,280</span><span class="font-body-sm text-body-sm text-slate-500">Curated Top 10 Listicles</span></div></div><div class="pt-space-xs flex items-center gap-space-xs text-amber-700 font-label-sm text-label-sm font-semibold"><span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span><span class="">Consensus Engine Active</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-slate-500 border-t border-slate-100"><p class="">© 2025 AZVerse Media Group. All rights reserved. Ranked under theater-grade consensus.</p><div class="flex items-center gap-space-lg font-label-md text-label-md"><a class="hover:text-slate-900 transition-colors" data-path="discover" href="#">Privacy Policy</a><a class="hover:text-slate-900 transition-colors" data-path="discover" href="#">Terms of Ranking</a><a class="hover:text-slate-900 transition-colors" data-path="discover" href="#">API Registry</a></div></div></div></footer>
+
+
+</body></html>
